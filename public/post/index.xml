@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>   on </title>
+    <link>/post/</link>
+    <description>Recent content in    on </description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>Sushmita V Gopalan 2020</copyright>
+    <lastBuildDate>Fri, 10 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Navigating Data Science Careers- I</title>
+      <link>/post/navigating-data-science-jobs/navigating-data-science-careers/</link>
+      <pubDate>Fri, 10 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/navigating-data-science-jobs/navigating-data-science-careers/</guid>
+      <description>
+
+
+&lt;span style=&#34;font-size:0.8em;&#34;&gt;
+&lt;p align=&#34;justify&#34;&gt;
+A couple of months ago, I talked to the graduating class of the MA in Computational Social Science program at the University of Chicago. As a recent alumna, and member of the program’s guinea pig cohort, I was excited to share my experiences from the last two years of being out in the world, and I figured a lot of what I shared with them is potentially applicable to a wide variety of data science job seekers.
+&lt;/br&gt;&lt;/br&gt;
+There are literally hundreds of articles, listicles and essays about how to navigate the data science job market written by people with far more experience and wisdom than I have to offer. I will add my data point to the mix. A couple of things specific to my background that have shaped my experiences - I am a foreign national living and working in the United States, I have a background in economics and public policy, was a data scientist in a research lab at a university, and have recently made the shift to an industry position.
+&lt;/p&gt;
+&lt;H2&gt;
+Find your competitive advantage.
+&lt;/H2&gt;
+&lt;p align=&#34;justify&#34;&gt;
+&lt;/br&gt;
+Data science jobs have truly grown in scope and variety over the last few years, so it would serve you well to really examine where your competitive advantage lies. Allow job descriptions to help you make this determination - be wary of postings that ask for thirty-four years of experience with machine learning, natural language processing, data engineering, statistics and the ability to assemble a computer from a couple of chips and scrap metal. This likely means that the hiring team isn’t entirely clear as to why they want to hire someone. Clear, descriptive, and honest job descriptions will give you the information you need to gauge for yourself whether you are best poised to do the thing they want you to do.
+&lt;/br&gt;&lt;/br&gt;
+Here are a couple of descriptions I like a lot - I can’t remember where they’re from, unfortunately, so I can’t shout out to the thoughtful managers that wrote them.
+&lt;/p&gt;
+&lt;p&gt;&lt;img width=&#34;100%&#34; height=&#34;100%&#34; src=&#34;/img/example.jpg&#34;/&gt;&lt;/p&gt;
+&lt;H2&gt;
+Examine closely for fit.
+&lt;/H2&gt;
+&lt;p align=&#34;justify&#34;&gt;
+It is such a cliché but also entirely true that interviews are supposed to be a two-way street. You’re going to be spending 40-50 hours a week doing this thing, so you may as well ask for all the information you need, and really evaluate if this job is a good fit for you. Asking these questions also allows the interviewer to get to know you better, and it gives them more information to assess you on. When I interviewed right out of my masters, I was second-guessing having turned down a cushy job, in a precarious visa situation, and on the verge of running out of health insurance - this made me nervous and underconfident, and I ended up saying whatever I thought the interviewer wanted to hear. To no one’s surprise, this was not an effective strategy.
+&lt;/br&gt;&lt;/br&gt;
+When I interviewed for my current job, here are some questions I asked my potential manager. A good time to ask these questions is when you’ve been offered the job, or are pretty sure you’ll be - these should help you make your decision.
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+What will I be working on for the first 3-6 months?
+&lt;/li&gt;
+&lt;li&gt;
+Who is the consumer of our team’s work?
+&lt;/li&gt;
+&lt;li&gt;
+What was this team’s last successful project?
+&lt;/li&gt;
+&lt;li&gt;
+What is the team’s engagement with open source development?
+&lt;/li&gt;
+&lt;li&gt;
+What resources will I have access to for continued education?
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here are some issues I would recommend discussing openly if you’re about to accept a research data science (or an econ pre-doc) position.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+Is this gig a stepping stone to grad school?
+&lt;/li&gt;
+&lt;li&gt;
+What authorship ambitions do you have?
+&lt;/li&gt;
+&lt;li&gt;
+What is the extent of your collaboration with the PI, with students, and with research staff?
+&lt;/li&gt;
+&lt;li&gt;
+How much infrastructure development are you signing up to do?
+&lt;/li&gt;
+&lt;li&gt;
+What stage of a project will you be working on? Read between the lines closely to estimate the division of your time across data collection, experiment design, data cleaning, grant-writing, and paper-writing.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/br&gt;
+&lt;H2&gt;
+It can help to have an online presence.
+&lt;/H2&gt;
+&lt;p align=&#34;justify&#34;&gt;
+I hesitate to bring this up, because it certainly does favour individuals with pre-existing privilege, with the time, energy and resources to dedicate to cultivating a professional presence online, outside of work. It is substantially more difficult for primary caretakers, people working multiple jobs, older candidates, people with interests and responsibilities outside their careers, people for whom it might not be entirely safe to be forthcoming with information in public. These advantages also distribute very clearly across race, gender, and class lines. It risks creating the Red Queen’s race - where you have to run faster and faster to stay in the same place; when enough candidates have something ‘extra’ to offer, it is no longer ‘extra’, it becomes what is expected.
+&lt;/br&gt;&lt;/br&gt;
+Having said that, an online presence can be a low-stakes way to share your work, practice writing and communication, and generally allow a glimpse into the way you approach problems. If you’re in school now, it’s very likely that with a few extra hours of effort, several of your class projects can be repurposed into simple blog posts. At minimum, it helps when it is easy to google you - even just a concise and updated LinkedIn profile is helpful. If you are able to devote capacity to it - it can offer a long-form argument for why someone should hire you - it is substantially more information than a resume, and unlike an interview, you have full control over what you’re discussing, and how. Simple &lt;a href=&#34;https://hayleefay.github.io/&#34;&gt;landing pages&lt;/a&gt;, &lt;a href=&#34;https://sharla.party/&#34;&gt;elaborate blogs&lt;/a&gt;, well-documented &lt;a href=&#34;https://github.com/skirmer&#34;&gt;Github&lt;/a&gt; &lt;a href=&#34;https://github.com/willdebras&#34;&gt;READMEs&lt;/a&gt;, detailed LinkedIn profiles are all valid! If you’re an R programmer, &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;blogdown&lt;/a&gt; is your friend, and &lt;a href=&#34;https://alison.rbind.io/&#34;&gt;Alison Hill&lt;/a&gt; has the most comprehensive instructions and troubleshooting tips.
+&lt;/br&gt;&lt;/br&gt;
+&lt;/p&gt;
+&lt;H2&gt;
+Practice talking about your work.
+&lt;/H2&gt;
+&lt;p align=&#34;justify&#34;&gt;
+You don’t have to be a drag and talk about your work all the time, but it is useful to grow accustomed to talking about your work informally. Practice talking about your work to people who are not your advisor, manager, or collaborator - talk to folks on the fringes of your discipline, and those entirely outside it. This will help you figure out what aspects of your job are more interesting to talk about, provoke curiosity, and follow-up questions, as opposed to what felt most challenging to &lt;em&gt;do&lt;/em&gt;. Most of us have a tendency to talk about the difficult work because we’re understandably proud of having done it, but it might not be the best reflection of our abilities, or help us have an animated and engaged conversation - which is ultimately what we want our interview to be.
+&lt;/br&gt;&lt;/br&gt;
+Learning to talk about my work has been difficult for me - I love what I do, but I’m usually loath to talk about it when I’m off the clock. I often explain things to my mother when I want a sanity check - she’s smart, willing to listen because I’m her daughter, and from a completely different discipline, so I’m able to figure out when something that seems obvious to me, does indeed need to be explicitly stated. Learn to use context and situational cues to figure out whether results-focused, methods-focused or process-focused explanations are best suited to exhibit your work.
+&lt;/br&gt;&lt;/br&gt;
+&lt;/p&gt;
+&lt;H2&gt;
+If you have a connection, use it.
+&lt;/H2&gt;
+&lt;p align=&#34;justify&#34;&gt;
+Again, this is another thing that I wish wasn’t the case, but unfortunately, it is. Credible referrals from people who know you in a capacity that allows them to speak to your skills, knowledge, and work ethic, can go a long way. At the very least, it usually gets a pair of human eyes on your application. If you’re asking for a referral or even just for information, ask NICELY. Remember that you’re not entitled to their time and energy. Ask specific, bounded questions (don’t say “hey, can you tell me about this job?” - they’re not obligated to guess what you want to know and write you an essay about their job). Offer multiple channels of communication, at their convenience. You don’t need to, and shouldn’t, grovel, but you definitely should be kind and polite! Send a thank-you note later.
+&lt;/br&gt;&lt;/br&gt;
+If you’re cold-applying, really optimize your resume by matching keywords to the job description. Include a basic cover letter, even if it is optional. Don’t hesitate to prune your resume ruthlessly to really foreground your most relevant experiences.
+&lt;/br&gt;&lt;/br&gt;
+&lt;/p&gt;
+&lt;p&gt;Part II here.&lt;/p&gt;
+&lt;p&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Happiness : An Outcome Variable</title>
+      <link>/post/whatsapp-sentiment/happiness-an-outcome-variable/</link>
+      <pubDate>Mon, 16 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/whatsapp-sentiment/happiness-an-outcome-variable/</guid>
+      <description>
+
+
+&lt;span style=&#34;font-size:0.8em;&#34;&gt;
+&lt;p align=&#34;justify&#34;&gt;
+I’ve been feeling with growing certainty that barring extreme circumstances and mental or physical illness, whether you feel happy on a daily basis is mostly a function of habits. I’ve noticed, anecdotally, that I tend to be happier on days I get adequate sunshine, exercise, don’t use my phone too much, actually &lt;em&gt;watch&lt;/em&gt; tv as opposed to letting Grey’s Anatomy play while I scroll aimlessly through Twitter, etc. Conversely, I’m more likely to wake up early, go outdoors, be productive, read and engage with other human beings on days I’m feeling happier.
+&lt;/br&gt;&lt;/br&gt;
+Lately, I’ve become curious about the &lt;a href=&#34;https://quantifiedself.com/&#34;&gt;Quantified Self&lt;/a&gt; movement; it advocates the pursuit of self-knowledge through numbers. Thanks to the fact that tech is ubiquitously (and creepily) tracking our every action, there’s plenty of data that’s already passively being collected about each of us. For data about myself, I pulled my daily steps off my iPhone using &lt;a href=&#34;https://apps.apple.com/us/app/qs-access/id920297614&#34;&gt;this app&lt;/a&gt;, my Netflix history, financial transactions (to track daily activities - everything costs $ except the lake, parks and libraries) and transcripts of WhatsApp conversations. To account for factors beyond my control, I pulled temperature, location and hours of daylight for each day of observation.
+&lt;/br&gt;&lt;/br&gt;
+If I want to understand the predictors of my happy days, I need some measure of my daily happiness. Since I haven’t actively been tracking my moods with a mood journal or an app like &lt;a href=&#34;https://happify.com/&#34;&gt;Happify&lt;/a&gt; or &lt;a href=&#34;https://www.trackyourhappiness.org/&#34;&gt;Track Your Happiness&lt;/a&gt;, I have to wade back into this data and come up with some metric to use as a proxy.
+&lt;/br&gt;&lt;/br&gt;
+I live and work on a continent that’s very far away from my family and several friends - as a result, some of my closest and most meaningful relationships are conducted online. Since I often talk about my day over text message with people who weren’t part of my day, I wondered if the words I use to talk about my day could be mined to compute a &lt;em&gt;happiness score&lt;/em&gt;, for want of a better term. I’m going to walk you through the exploratory analysis I did to figure out whether this made sense.
+&lt;/br&gt;&lt;/br&gt;
+To do this, I first exported WhatsApp transcripts of conversations with four different friends to understand what this data looked like. All four are friends I have relatively substantive conversations with and are unlikely to have noise from forwards or tweets or cat pictures. I split up the text messages into sentences, and used functions from the &lt;a href=&#34;https://github.com/trinker/sentimentr&#34;&gt;sentimentr&lt;/a&gt; package to compute polarity scores for each sentence, using &lt;a href=&#34;http://sentiwordnet.isti.cnr.it&#34;&gt;Baccianella, Esuli and Sebastiani’s (2010)&lt;/a&gt; SentiWord lexicon. With &lt;code&gt;sentimentr&lt;/code&gt;, I was able to incorporate valence shifters; these account for words that negate, amplify, de-amplify, or overrule adjacent words with high polarity scores. Scores are grouped by date and sender, and then averaged. For instance, the average sentiment of the text messages I sent my friend Pranathi on Oct 21, 2018 was 0.32 .
+&lt;/br&gt;&lt;/br&gt;
+Neutral sentences like ‘How are you?’ are coded as 0 with more positive sentences having positive sentiment scores and more negative sentences having negative scores. Here’s a quick look at the overall distribution of sentiment scores. As I’d expected, it looks roughly normal - most sentences are relatively neutral with more extreme sentiment scores becoming increasingly less frequent.
+&lt;/br&gt;&lt;/br&gt;
+&lt;/p&gt;
+&lt;img src=&#34;/post/whatsapp-sentiment/2019-09-16-happiness-an-outcome-variable_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;
+&lt;p align=&#34;justify&#34;&gt;
+I know that I’m susceptible to the Sunday blues, so I wanted to see if I tend to send more despondent messages on Sundays. Turns out, not true at all! The valance of my text messages are, in fact, most positive on Sundays! Perhaps this is because we’re all animatedly discussing the wild, exciting Saturday nights (lol) of our twenties, but silently sulking through laundry and chores when the full force of Monday-dread hits. Adding to the noise here is time-difference - this data represents at least three different time zones and so, my friends and I are often in different moods and frames of mind when we talk to each other.
+&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/whatsapp-sentiment/2019-09-16-happiness-an-outcome-variable_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p align=&#34;justify&#34;&gt;
+The next thing I was curious to explore was - whose moods are getting reflected in the text? There’s naturally a fair degree of interdependence here - even when I’m having a great day, I’m unlikely to sound bouyant and pumped while talking to a friend who’s feeling miserable, and vice-versa. Conversations (ideally, anyway) involve listening and responding, and we could potentially hypothesize that the person initiating the conversation is likely to set the tone and the other person takes their cue from them. I’ve had the phone I’m using since Nov 2017, so I plotted daily averages over close to two years. I don’t really know what to make of these trends other than that I appear to use more positively scored words than my friends.
+&lt;/p&gt;
+&lt;img src=&#34;/post/whatsapp-sentiment/2019-09-16-happiness-an-outcome-variable_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;
+&lt;p align=&#34;justify&#34;&gt;
+To break this down further, I split these trends up by friend and I rather like what this reveals! In the words of the ultimate object of my bicep-envy (Michelle Obama), “When they go low, we go high”. I should also probably find a way to model my penchant for quoting things that are completely out of context but, look! There are several instances where a local minimum in one person’s curve is accompanied by a local maximum in the other person’s curve of somewhat similar magnitude. It appears as if when one of us is having a rough day, the other is being reassuring and responding with positivity and optimism! Before we cue sunshine and rainbows, however, does this also mean that when one person is talking about something very positive, the other is bringing them down? Without accounting for lag, I can’t say for sure, but this also makes me wonder whether highly positive (or highly negative) information is more likely to be shared over a phone conversation.
+&lt;/p&gt;
+&lt;img src=&#34;/post/whatsapp-sentiment/2019-09-16-happiness-an-outcome-variable_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;768&#34; /&gt;
+&lt;p align=&#34;justify&#34;&gt;
+These curves also appear to suggest that ‘moods’ are somewhat persistant and cyclical. I looked at the valance of my text messages alone, at two different levels of granularity, to see if they roughly correlated with my own memories of my feelings at the time and if any patterns I was seeing were artifacts of ggplot smoothing functions. I won’t go into too much detail, but they don’t consistently correlate, confirming that the words I use are not only a function of my own moods but also a function of my friends’ moods. I am, of course, an unreliable narrator of my own past and could be conflating the feelings I had while doing certain things with the feelings that surfaced when those actions bore fruit. Weekly cyclical patterns emerge when the ‘span’ parameter for geom_smooth’s loess function is set to a lower value. This controls the degree to which smoothing occurs; lower values produce more wriggly lines.
+&lt;/p&gt;
+&lt;img src=&#34;/post/whatsapp-sentiment/2019-09-16-happiness-an-outcome-variable_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;
+&lt;p align=&#34;justify&#34;&gt;
+So, should I use sentiment scores on my text messages as a proxy for how good my mood was on a given day? Shouldn’t I be trying a more sophisticated, tailored approach to classifying sentiment first? I’ve used a completely unaltered off-the-shelf dictionary-based implementation using SentiWord. This doesn’t take into account specificities of context, the fact that a non-trivial percentage of my text messages are transilterated Hindi, slang, expletives, emojis and GIFs. For instance, ‘Haha’ and ‘Hahaha’ are both rated as -0.59 while hahahahaha is rated 0. “What the fuck!” is rated -0.29 but “wtf!” is rated 0. Inexplicably, “This is amazing” gets a -0.23.
+&lt;/br&gt;&lt;/br&gt;
+Before I whip tensorflow out though, I think I have enough reasons to believe that even with more accurate and specific sentiment classification, this is maybe not the best idea.
+&lt;/br&gt;
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;My text messages are not responses to my day alone, they are also responses to my friends’ days.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;There’s a lot of missing data - I’m not texting my friends when I’m hanging out with them IRL or speaking to them on the phone. What information I choose to convey over text is not a choice I make randomly and is likely correlated with the types of emotions I’m swayed by at that point.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;It would be a fairly strong assumption to make that anyone is consistently authentic and honest in communicating their feelings. Some of my most cheery Instagram posts were made on rather miserable days.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p align=&#34;justify&#34;&gt;
+While I continue to think of alternatives to use as a proxy for my daily happiness, I’ve started to track my moods using the &lt;a href=&#34;https://daylio.webflow.io/&#34;&gt;Daylio&lt;/a&gt; app. If you have other ideas, I’d love to hear them! Code for this can be found &lt;a href=&#34;https://github.com/sushmitavgopalan16/sush-website/blob/master/content/post/whatsapp-sentiment/2019-09-16-happiness-an-outcome-variable.Rmd&#34;&gt;here&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

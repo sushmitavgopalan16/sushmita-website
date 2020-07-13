@@ -1,0 +1,96 @@
+---
+title: 'Navigating Data Science Careers- I'
+author: ''
+date: '2020-07-10'
+slug: navigating-data-science-careers
+categories: []
+#tags:
+#  - personal
+#  - nlp
+#  - tidytext
+subtitle: ''
+summary: ''
+authors: []
+#lastmod: '2019-09-16T22:10:23-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+<span style="font-size:0.8em;">
+<p align="justify">
+A couple of months ago, I talked to the graduating class of the MA in Computational Social Science program at the University of Chicago. As a recent alumna, and member of the program's guinea pig cohort, I was excited to share my experiences from the last two years of being out in the world, and I figured a lot of what I shared with them is potentially applicable to a wide variety of data science job seekers. 
+</br></br>
+There are literally hundreds of articles, listicles and essays about how to navigate the data science job market written by people with far more experience and wisdom than I have to offer. I will add my data point to the mix. A couple of things specific to my background that have shaped my experiences - I am a foreign national living and working in the United States, I have a background in economics and public policy, was a data scientist in a research lab at a university, and have recently made the shift to an industry position.
+</p>
+<H2> Find your competitive advantage. </H2> 
+<p align="justify">
+</br>
+Data science jobs have truly grown in scope and variety over the last few years, so it would serve you well to really examine where your competitive advantage lies. Allow job descriptions to help you make this determination - be wary of postings that ask for thirty-four years of experience with machine learning, natural language processing, data engineering, statistics and the ability to assemble a computer from a couple of chips and scrap metal. This likely means that the hiring team isn't entirely clear as to why they want to hire someone. Clear, descriptive, and honest job descriptions will give you the information you need to gauge for yourself whether you are best poised to do the thing they want you to do. 
+</br></br>
+Here are a couple of descriptions I like a lot - I can't remember where they're from, unfortunately, so I can't shout out to the thoughtful managers that wrote them. 
+</p>
+
+<img width="100%" height="100%" src="/img/example.jpg"/>
+
+<H2> Examine closely for fit. </H2> 
+
+<p align="justify">
+It is such a cliché but also entirely true that interviews are supposed to be a two-way street. You're going to be spending 40-50 hours a week doing this thing, so you may as well ask for all the information you need, and really evaluate if this job is a good fit for you. Asking these questions also allows the interviewer to get to know you better, and it gives them more information to assess you on. When I interviewed right out of my masters, I was second-guessing having turned down a cushy job, in a precarious visa situation, and on the verge of running out of health insurance - this made me nervous and underconfident, and I ended up saying whatever I thought the interviewer wanted to hear. To no one's surprise, this was not an effective strategy. 
+</br></br>
+When I interviewed for my current job, here are some questions I asked my potential manager. A good time to ask these questions is when you've been offered the job, or are pretty sure you'll be - these should help you make your decision.
+</p>
+
+<ul>
+  <li>What will I be working on for the first 3-6 months?</li>
+  <li>Who is the consumer of our team's work?</li>
+  <li>What was this team's last successful project?</li>
+  <li>What is the team's engagement with open source development?</li>
+  <li>What resources will I have access to for continued education?</li>
+</ul>
+
+Here are some issues I would recommend discussing openly if you're about to accept a research data science (or an econ pre-doc) position.
+
+<ul>
+  <li>Is this gig a stepping stone to grad school?</li>
+  <li>What authorship ambitions do you have?</li>
+  <li>What is the extent of your collaboration with the PI, with students, and with research staff?</li>
+  <li>How much infrastructure development are you signing up to do? </li>
+  <li>What stage of a project will you be working on? Read between the lines closely to estimate the division of your time across data collection, experiment design, data cleaning, grant-writing, and paper-writing.</li>
+</ul>
+</br>
+<H2> It can help to have an online presence.  </H2> 
+
+<p align="justify">
+I hesitate to bring this up, because it certainly does favour individuals with pre-existing privilege, with the time, energy and resources to dedicate to cultivating a professional presence online, outside of work. It is substantially more difficult for primary caretakers, people working multiple jobs, older candidates, people with interests and responsibilities outside their careers, people for whom it might not be entirely safe to be forthcoming with information in public. These advantages also distribute very clearly across race, gender, and class lines. It risks creating the Red Queen's race - where you have to run faster and faster to stay in the same place; when enough candidates have something 'extra' to offer, it is no longer 'extra', it becomes what is expected. 
+</br></br>
+Having said that, an online presence can be a low-stakes way to share your work, practice writing and communication, and generally allow a glimpse into the way you approach problems. If you're in school now, it's very likely that with a few extra hours of effort, several of your class projects can be repurposed into simple blog posts. At minimum, it helps when it is easy to google you - even just a concise and updated LinkedIn profile is helpful. If you are able to devote capacity to it - it can offer a long-form argument for why someone should hire you - it is substantially more information than a resume, and unlike an interview, you have full control over what you're discussing, and how. Simple [landing pages](https://hayleefay.github.io/), [elaborate blogs](https://sharla.party/), well-documented [Github](https://github.com/skirmer)  [READMEs](https://github.com/willdebras), detailed LinkedIn profiles are all valid! If you're an R programmer, [blogdown](https://bookdown.org/yihui/blogdown/) is your friend, and [Alison Hill](https://alison.rbind.io/) has the most comprehensive instructions and troubleshooting tips. 
+</br></br>
+</p>
+
+<H2> Practice talking about your work.</H2> 
+
+<p align="justify">
+You don't have to be a drag and talk about your work all the time, but it is useful to grow accustomed to talking about your work informally. Practice talking about your work to people who are not your advisor, manager, or collaborator - talk to folks on the fringes of your discipline, and those entirely outside it. This will help you figure out what aspects of your job are more interesting to talk about, provoke curiosity, and follow-up questions, as opposed to what felt most challenging to *do*. Most of us have a tendency to talk about the difficult work because we're understandably proud of having done it, but it might not be the best reflection of our abilities, or help us have an animated and engaged conversation - which is ultimately what we want our interview to be. 
+</br></br>
+Learning to talk about my work has been difficult for me - I love what I do, but I'm usually loath to talk about it when I'm off the clock. I often explain things to my mother when I want a sanity check - she's smart, willing to listen because I'm her daughter, and from a completely different discipline, so I'm able to figure out when something that seems obvious to me, does indeed need to be explicitly stated. Learn to use context and situational cues to figure out whether results-focused, methods-focused or process-focused explanations are best suited to exhibit your work.
+</br></br>
+</p>
+
+<H2> If you have a connection, use it.  </H2> 
+
+<p align="justify">
+Again, this is another thing that I wish wasn't the case, but unfortunately, it is. Credible referrals from people who know you in a capacity that allows them to speak to your skills, knowledge, and work ethic, can go a long way. At the very least, it usually gets a pair of human eyes on your application. If you're asking for a referral or even just for information, ask NICELY. Remember that you're not entitled to their time and energy. Ask specific, bounded questions (don't say "hey, can you tell me about this job?" - they're not obligated to guess what you want to know and write you an essay about their job). Offer multiple channels of communication, at their convenience. You don't need to, and shouldn't, grovel, but you definitely should be kind and polite! Send a thank-you note later. 
+</br></br>
+If you're cold-applying, really optimize your resume by matching keywords to the job description. Include a basic cover letter, even if it is optional. Don't hesitate to prune your resume ruthlessly to really foreground your most relevant experiences.
+</br></br>
+</p>
+
+Part II here.
+
+</span>
+

@@ -1,0 +1,42 @@
+---
+title: tidytuesday
+author: ''
+date: '2019-09-08'
+slug: tidytuesday
+categories:
+  - tidytuesday
+  - rstats
+  - ggplot2
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2019-09-08T20:01:20-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+```{r setup, include=FALSE}
+
+library(tidyverse)
+library(lubridate)
+library(data.table)
+library(ggplot2)
+detach('package:dplyr')
+library(dplyr)
+
+cpu <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-09-03/cpu.csv")
+
+gpu <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-09-03/gpu.csv")
+
+ram <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-09-03/ram.csv")
+
+```
+
+
+
+

@@ -1,0 +1,41 @@
+---
+title: 'Happiness : An Outcome Variable'
+author: ''
+date: '2019-09-16'
+slug: happiness-an-outcome-variable
+categories: []
+#tags:
+#  - personal
+#  - nlp
+#  - tidytext
+subtitle: ''
+summary: ''
+authors: []
+#lastmod: '2019-09-16T22:10:23-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+<span style="font-size:0.8em;">
+<p align="justify">
+
+I’ve been feeling with growing certainty that barring extreme circumstances and mental or physical illness, whether or not you feel happy on a daily basis is mostly a function of habits. I've noticed, anecdotally, that I tend to be happier on days I get adequate sunshine, exercise, don't use my phone too much, actually *watch* tv as opposed to letting Grey's Anatomy play while I scroll aimlessly through Twitter, etc. Conversely, I'm more likely to wake up early, go outdoors, be productive, read and engage with other human beings on days I'm feeling happier. 
+</br></br>
+Lately, I've become curious about the [Quantified Self](https://quantifiedself.com/) movement; it advocates the pursuit of self-knowledge through numbers. Thanks to the fact that tech is ubiquitously (and creepily) tracking our every action, there's plenty of data that's already passively being collected about each of us. For data about myself, I pulled my daily steps off my iPhone using [this app](https://apps.apple.com/us/app/qs-access/id920297614), my Netflix history, financial transactions (to track daily activities - everything costs $ except the lake, parks and libraries) and transcripts of WhatsApp conversations. To account for factors beyond my control, I pulled temperature, location and hours of daylight for each day of observation.
+</br></br>
+If I want to understand the predictors of my happy days, I need some measure of my daily happiness. Since I haven't been actively tracking my moods with a mood journal or an app like [Happify](https://happify.com/) or [Track Your Happiness](https://www.trackyourhappiness.org/), I have to wade back into this data and come up with some metric to use as a proxy. 
+</p></span>
+
+
+
+```{r, warning=FALSE, message=FALSE}
+library(dplyr)
+library(ggplot2)
+iris %>% 
+  ggplot() + 
+  geom_point(aes(x = Sepal.Length, y = Sepal.Width, colour = Species))
+```
+

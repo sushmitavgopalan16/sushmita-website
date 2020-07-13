@@ -1,0 +1,30 @@
+---
+title: testingR
+author: ''
+date: '2019-09-02'
+slug: testingr
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2019-09-02T00:28:04-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+```{r, echo=FALSE}
+library(dplyr)
+library(ggplot2)
+```
+
+```{r}
+iris %>% 
+  ggplot() + 
+  geom_point(aes(x = Sepal.Length, y = Sepal.Width, colour = Species)) +
+  theme_minimal()
+```
+

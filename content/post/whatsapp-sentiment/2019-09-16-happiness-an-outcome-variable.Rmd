@@ -1,0 +1,246 @@
+---
+title: 'Happiness : An Outcome Variable'
+author: ''
+date: '2019-09-16'
+slug: happiness-an-outcome-variable
+categories: []
+#tags:
+#  - personal
+#  - nlp
+#  - tidytext
+subtitle: ''
+summary: ''
+authors: []
+#lastmod: '2019-09-16T22:10:23-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+```{r, warning=FALSE, message=FALSE, echo=FALSE}
+knitr::opts_chunk$set(echo = FALSE, cache = TRUE)
+options(scipen = 999)
+
+library(tidyverse)
+library(lubridate)
+library(ggplot2)
+detach('package:dplyr')
+library(dplyr)
+library(tidytext)
+library(sentimentr)
+library(viridis)
+library(magrittr)
+library(wesanderson)
+library(kableExtra)
+library(knitr)
+
+process_text <- function(filename){
+  df <- 
+    read.csv(filename, header = TRUE, stringsAsFactors = FALSE) %>% 
+  
+    select(datetime, sender, text) %>% 
+    mutate(datetime = dmy_hms(datetime),
+           date = date(datetime),
+           day = lubridate::wday(date, label = TRUE, abbr = FALSE)) %>% 
+    group_by(date,sender) %>% 
+    mutate(all_text = paste0(text, collapse = ".")) %>% 
+    select(date, sender, all_text) %>% 
+    unique() %>%
+    mutate(all_text = str_replace_all(all_text, 'image omitted', ' ')) %>% 
+    select(all_text, everything()) %>% 
+    mutate(all_text = textclean::replace_emoji(all_text),
+           all_text = str_replace_all(all_text, "\\<[a-z][a-z]\\>", ' '),
+           all_text = str_replace_all(all_text, "\\<[a-z][0-9]\\>", ' '),
+           all_text = str_replace_all(all_text, "\\<[0-9][a-z]\\>", ' '),
+           all_text = str_replace_all(all_text, "\\<[0-9][0-9]\\>", ' '), 
+           dialogue_split = get_sentences(all_text)) %$%
+    sentiment_by(dialogue_split, list(sender,date),
+                 polarity_dt = lexicon::hash_sentiment_senticnet) %>% 
+    mutate(norm_sentiment = ave_sentiment/word_count)
+  return(df)
+}
+
+chats <-list.files('data', pattern = '*.csv')
+
+d <- process_text(paste('data/',chats[1], sep = '')) %>% 
+  mutate(sender = ifelse(sender == 'Didige','Friend 1','Me'))
+n <- process_text(paste('data/',chats[2], sep = '')) %>% 
+  mutate(sender = ifelse(sender == 'Nikhil','Friend 2','Me'))
+p <- process_text(paste('data/',chats[3], sep = '')) %>% 
+  mutate(sender = ifelse(sender == 'Pranathi','Friend 3','Me'))
+r <- process_text(paste('data/',chats[4], sep = '')) %>% 
+  mutate(sender = ifelse(sender == 'Riddhima','Friend 4','Me'))
+
+friends <- bind_rows(d,n,p,r) %>% 
+  mutate(binary_sender = case_when(sender == 'Me' ~ 'Sent',
+                                   TRUE ~ 'Received'))
+
+transcripts <- bind_rows(
+  read_csv(paste('data/',chats[1], sep = '')),
+  read_csv(paste('data/',chats[2], sep = '')),
+  read_csv(paste('data/',chats[3], sep = '')),
+  read_csv(paste('data/',chats[4], sep = ''))) %>% 
+    select(datetime, sender, text) %>% 
+    mutate(datetime = dmy_hms(datetime),
+           date = date(datetime),
+           day = lubridate::wday(date, label = TRUE, abbr = FALSE)) %>% 
+    group_by(date,sender) %>% 
+    mutate(all_text = paste0(text, collapse = " ")) %>% 
+    select(date, sender, all_text)
+
+example <- p %>% 
+  filter(date == date('2018-10-21')) %>% 
+  filter(sender == 'Me') %>% 
+  pull(ave_sentiment)
+```
+
+<span style="font-size:0.8em;">
+<p align="justify">
+I’ve been feeling with growing certainty that barring extreme circumstances and mental or physical illness, whether you feel happy on a daily basis is mostly a function of habits. I've noticed, anecdotally, that I tend to be happier on days I get adequate sunshine, exercise, don't use my phone too much, actually *watch* tv as opposed to letting Grey's Anatomy play while I scroll aimlessly through Twitter, etc. Conversely, I'm more likely to wake up early, go outdoors, be productive, read and engage with other human beings on days I'm feeling happier. 
+</br></br>
+Lately, I've become curious about the [Quantified Self](https://quantifiedself.com/) movement; it advocates the pursuit of self-knowledge through numbers. Thanks to the fact that tech is ubiquitously (and creepily) tracking our every action, there's plenty of data that's already passively being collected about each of us. For data about myself, I pulled my daily steps off my iPhone using [this app](https://apps.apple.com/us/app/qs-access/id920297614), my Netflix history, financial transactions (to track daily activities - everything costs $ except the lake, parks and libraries) and transcripts of WhatsApp conversations. To account for factors beyond my control, I pulled temperature, location and hours of daylight for each day of observation.
+</br></br>
+If I want to understand the predictors of my happy days, I need some measure of my daily happiness. Since I haven't actively been tracking my moods with a mood journal or an app like [Happify](https://happify.com/) or [Track Your Happiness](https://www.trackyourhappiness.org/), I have to wade back into this data and come up with some metric to use as a proxy. 
+</br></br>
+I live and work on a continent that's very far away from my family and several friends - as a result, some of my closest and most meaningful relationships are conducted online. Since I often talk about my day over text message with people who weren't part of my day, I wondered if the words I use to talk about my day could be mined to compute a *happiness score*, for want of a better term. I'm going to walk you through the exploratory analysis I did to figure out whether this made sense.
+</br></br>
+To do this, I first exported WhatsApp transcripts of conversations with four different friends to understand what this data looked like. All four are friends I have relatively substantive conversations with and are unlikely to have noise from forwards or tweets or cat pictures. I split up the text messages into sentences, and used functions from the [sentimentr](https://github.com/trinker/sentimentr) package to compute polarity scores for each sentence, using  [Baccianella, Esuli and Sebastiani's (2010)](http://sentiwordnet.isti.cnr.it) SentiWord lexicon. With `sentimentr`, I was able to incorporate valence shifters; these account for words that negate, amplify, de-amplify, or overrule adjacent words with high polarity scores. Scores are grouped by date and sender, and then averaged. For instance, the average sentiment of the text messages I sent my friend Pranathi on Oct 21, 2018 was   `r round(example,2)` . 
+</br></br>
+Neutral sentences like 'How are you?' are coded as 0 with more positive sentences having positive sentiment scores and more negative sentences having negative scores. Here's a quick look at the overall distribution of sentiment scores. As I'd expected, it looks roughly normal - most sentences are relatively neutral with more extreme sentiment scores becoming increasingly less frequent.
+</br></br></p>
+```{r, message=FALSE, warning=FALSE}
+friends %>%
+  ggplot() +
+  geom_histogram(aes(x = ave_sentiment), fill = "#E6A0C4") +
+  theme_minimal() +
+  scale_fill_manual(values = wes_palette(name = "GrandBudapest2"))  +
+  xlab('Average Sentiment') +
+  ylab('Frequency') +
+  ggtitle('Distribution of Sentiment Scores')
+
+```
+<p align="justify">
+I know that I'm susceptible to the Sunday blues, so I wanted to see if I tend to send more despondent messages on Sundays. Turns out, not true at all! The valance of my text messages are, in fact, most positive on Sundays! Perhaps this is because we're all animatedly discussing the wild, exciting Saturday nights (lol) of our twenties, but silently sulking through laundry and chores when the full force of Monday-dread hits. Adding to the noise here is time-difference - this data represents at least three different time zones and so, my friends and I are often in different moods and frames of mind when we talk to each other. 
+</p>
+
+```{r}
+friends %>% 
+  mutate(day = lubridate::wday(date, label = TRUE, abbr = FALSE)) %>% 
+  drop_na() %>% 
+  group_by(day, binary_sender) %>% 
+  summarize(avg = mean(ave_sentiment),
+            n = mean(word_count)) %>% 
+  ggplot() + 
+  geom_col(aes(x = day, y = avg, group = binary_sender, fill = binary_sender), position = 'dodge') +
+  theme_minimal() +
+  scale_fill_manual(values = wes_palette(name = "GrandBudapest2")) +
+  xlab(NULL) +
+  ylab('Average Sentiment') +
+  theme(legend.title = element_blank()) +
+  ggtitle('Day of Week')
+```
+
+<p align="justify">
+The next thing I was curious to explore was - whose moods are getting reflected in the text? There's naturally a fair degree of interdependence here - even when I'm having a great day, I'm unlikely to sound bouyant and pumped while talking to a friend who's feeling miserable, and vice-versa. Conversations (ideally, anyway) involve listening and responding, and we could potentially hypothesize that the person initiating the conversation is likely to set the tone and the other person takes their cue from them. I've had the phone I'm using since Nov 2017, so I plotted daily averages over close to two years. I don't really know what to make of these trends other than that I appear to use more positively scored words than my friends.
+</p>
+
+
+```{r, message=FALSE, warning=FALSE}
+friends %>% 
+  filter(sender!= 'Friend 1' & sender!= 'Friend 2') %>% 
+  drop_na() %>% 
+  group_by(date, binary_sender) %>% 
+  summarize(avg = mean(ave_sentiment)) %>% 
+  ggplot() + 
+  geom_smooth(aes(x = date, y = avg, group = binary_sender, colour = binary_sender), se = FALSE, span = 0.4) +
+  theme_minimal() +
+  scale_colour_manual(values = wes_palette(name = "GrandBudapest2")) +
+  xlab(NULL) +
+  ylab('Average Sentiment') +
+  theme(legend.title = element_blank()) +
+  ggtitle('Sentiment over Time') 
+```
+<p align="justify">
+To break this down further, I split these trends up by friend and I rather like what this reveals! In the words of the ultimate object of my bicep-envy (Michelle Obama), "When they go low, we go high". I should also probably find a way to model my penchant for quoting things that are completely out of context but, look! There are several instances where a local minimum in one person's curve is accompanied by a local maximum in the other person's curve of somewhat similar magnitude. It appears as if when one of us is having a rough day, the other is being reassuring and responding with positivity and optimism! Before we cue sunshine and rainbows, however, does this also mean that when one person is talking about something very positive, the other is bringing them down? Without accounting for lag, I can't say for sure, but this also makes me wonder whether highly positive (or highly negative) information is more likely to be shared over a phone conversation.
+</p>
+
+```{r, fig.width=8,fig.height=5, message=FALSE, warning=FALSE}
+plot_line <- function(df,title){
+  g <- df %>% 
+  ggplot() +
+  geom_smooth(aes(x = date, y = ave_sentiment, group = sender, colour = sender), span = 0.3, se = FALSE) +
+  theme_minimal( )+
+  scale_colour_manual(values = wes_palette(name = "GrandBudapest2"))  +
+  xlab(NULL) +
+  ylab('Average Sentiment') +
+  theme(legend.title = element_blank()) +
+  ggtitle(title) +
+  geom_hline(yintercept = 0 )
+  return(g)
+}
+gridExtra::grid.arrange(plot_line(d, 'Friend 1'),
+             plot_line(n, 'Friend 2'),
+             plot_line(p, 'Friend 3'),
+             plot_line(r, 'Friend 4'),
+             ncol = 2)
+
+```
+<p align="justify">
+These curves also appear to suggest that 'moods' are somewhat persistant and cyclical.  I looked at the valance of my text messages alone, at two different levels of granularity, to see if they roughly correlated with my own memories of my feelings at the time and if any patterns I was seeing were artifacts of ggplot smoothing functions. I won't go into too much detail, but they don't consistently correlate, confirming that the words I use are not only a function of my own moods but also a function of my friends' moods. I am, of course, an unreliable narrator of my own past and could be conflating the feelings I had while doing certain things with the feelings that surfaced when those actions bore fruit. Weekly cyclical patterns emerge when the 'span' parameter for geom_smooth's loess function is set to a lower value. This controls the degree to which smoothing occurs; lower values produce more wriggly lines. 
+</p>
+
+```{r, message = FALSE, warning = FALSE}
+friends %>% 
+  filter(sender == 'Me') %>% 
+  ggplot() +
+  geom_smooth(aes(x = date, y = ave_sentiment, group = sender), span = 0.1, se = FALSE) +
+  geom_smooth(aes(x = date, y = ave_sentiment, group = sender, colour = sender), span = 0.01, se = FALSE) +
+  theme_minimal( )+
+  scale_colour_manual(values = wes_palette(name = "GrandBudapest2"))  +
+  xlab(NULL) +
+  ylab('Average Sentiment') +
+  theme(legend.title = element_blank()) +
+  ggtitle("Sent Messages") +
+  geom_hline(yintercept = 0 ) +
+  theme(legend.position = 'out' )
+
+```
+<p align="justify">
+So, should I use sentiment scores on my text messages as a proxy for how good my mood was on a given day? Shouldn't I be trying a more sophisticated, tailored approach to classifying sentiment first? I've used a completely unaltered off-the-shelf dictionary-based implementation using SentiWord. This doesn't take into account specificities of context, the fact that a non-trivial percentage of my text messages are transilterated Hindi, slang, expletives, emojis and GIFs. For instance, 'Haha' and 'Hahaha' are both rated as -0.59 while hahahahaha is rated 0. "What the fuck!" is rated -0.29 but "wtf!" is rated 0. Inexplicably, "This is amazing" gets a -0.23. 
+</br></br>
+Before I whip tensorflow out though, I think I have enough reasons to believe that even with more accurate and specific sentiment classification, this is maybe not the best idea.
+</br>
+</p>
+* My text messages are not responses to my day alone, they are also responses to my friends' days.
+
+* There's a lot of missing data - I'm not texting my friends when I'm hanging out with them IRL or speaking to them on the phone. What information I choose to convey over text is not a choice I make randomly and is likely correlated with the types of emotions I'm swayed by at that point.
+
+* It would be a fairly strong assumption to make that anyone is consistently authentic and honest in communicating their feelings. Some of my most cheery Instagram posts were made on rather miserable days.
+
+
+<p align="justify">
+While I continue to think of alternatives to use as a proxy for my daily happiness, I've started to track my moods using the [Daylio](https://daylio.webflow.io/) app. If you have other ideas, I'd love to hear them! Code for this can be found [here](https://github.com/sushmitavgopalan16/sush-website/blob/master/content/post/whatsapp-sentiment/2019-09-16-happiness-an-outcome-variable.Rmd)
+</p>
+```{r, echo = FALSE}
+sample_sentences <- c("What the fuck!",
+                "wtf!",
+               "This is amazing",
+               "I could really use a break.",
+               "Honestly, I don't care.",
+               "How are you?",
+               "You will NOT believe what she said!",
+               "Haha",
+               "Hahaha",
+               "hahahahaha",
+               "lmao")
+scores <- sentiment_by(sample_sentences,
+               valence_shifters_dt = lexicon::hash_valence_shifters,
+                 polarity_dt = lexicon::hash_sentiment_senticnet )
+scores$text <- sample_sentences
+```
+
+
+</span>
+
