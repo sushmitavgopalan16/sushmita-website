@@ -84,7 +84,7 @@ Learning to talk about my work has been difficult for me - I love what I do, but
 <H2> If you have a connection, use it.  </H2> 
 
 <p align="justify">
-Again, this is another thing that I wish wasn't the case, but unfortunately, it is. Credible referrals from people who know you in a capacity that allows them to speak to your skills, knowledge, and work ethic, can go a long way. At the very least, it usually gets a pair of human eyes on your application. I've found that academic research positions aren't always advertised, so if there are any professors or labs you want to work with, just reach out - your worst outcome is that someone hears their work is admired.
+Again, this is another thing that I wish wasn't the case, but unfortunately, it is. Credible referrals from people who know you in a capacity that allows them to speak to your skills, knowledge, and work ethic, can go a long way. At the very least, it usually gets a pair of human eyes on your application. I've found that academic research positions aren't always advertised, so if there are any professors or labs you want to work with, just reach out - your worst outcome is that someone hears that their work is admired.
 </br></br>
 If you're asking for a referral or even just for information, ask NICELY. Remember that you're not entitled to their time and energy. Ask specific, bounded questions (don't say "hey, can you tell me about this job?" - they're not obligated to guess what you want to know and write you an essay about their job). Offer multiple channels of communication, at their convenience. You don't need to, and shouldn't, grovel, but you definitely should be kind and polite! Send a thank-you note later. 
 </br></br>
@@ -95,7 +95,7 @@ If you're cold-applying, really optimize your resume by matching keywords to the
 <H2> Leverage your social science background. </H2> 
 
 <p align="justify">
-I went to college in an institute of technology where as an Economics major, I was basically regarded as a Poetry major (zero shade against Poetry, but you know what I mean). Partly because 'technology' was seen as so distinct from social science during undergrad, I was surprised by how many things that are now packaged as 'data science' are decades old statistical concepts applied commonly across economics, political science, and quantitative sociology. 
+I went to college in an institute of technology where as an Economics major, I was basically regarded as a Poetry major (zero shade at Poetry, but you know what I mean). Partly because 'technology' was seen as so distinct from social science during undergrad, I was surprised by how many things that are now packaged as 'data science' are decades old statistical concepts applied commonly across economics, political science, and quantitative sociology. 
 </br></br>
 The term data science is relatively recent, but social scientists really have been using these ideas forever. We have long traditions of analyzing surveys, using econometrics to draw conclusions about populations from samples, a wide variety of experiments to make causal claims. Forecasting, time series analysis, experiment design, randomized trials (A/B testing? it's a remix) are all completely with the realm of tools quantitative social scientists use to understand the world. 
 </br></br>
@@ -111,7 +111,7 @@ Here are some things podcasts/ talks by very successful data scientists with soc
 <H2> Python or R?  </H2> 
 
 <p align="justify">
-This image from [here](https://kieranhealy.org/blog/archives/2019/02/07/statswars/) never fails to make me laugh, but I really think the answer to this question is "**do not gatekeep, comment your code, and learn SQL**". (Highly reluctant note to self - the message to not gatekeep applies when I talk to Stata users too.)
+This image from [here](https://kieranhealy.org/blog/archives/2019/02/07/statswars/) never fails to make me laugh, but I really think the answer to this question is "**do not gatekeep, comment your code, and learn SQL**". (Highly reluctant note to self - the message to refrain from gatekeeping applies when I talk to Stata users too.)
 </p>
 ![](https://kieranhealy.org/files/misc/package_wars.png)
 <p align="justify">
@@ -139,7 +139,7 @@ If you're negotiating at your current job, I don't have experience with this but
 
 <H2> Remember, it's *one* job!  </H2> 
 <p align="justify">
-It's important to find a role that's a great fit for you, but remember it's one job! Most likely, it's 5-10% of your career. If your dream job doesn't feel accessible to you at the moment, take the time to pick up the skills you need to have it. Making career changes is hard, and I've noticed that it's easier to make changes along one axis at a time - geography / skillset / domain. For me this looked like - econ policy job -> masters -> data science job in policy/research -> data science job in tech. If you're international, you're already making a significant geography change. 
+It's important to find a role that's a great fit for you, but remember it's one job! Most likely, it's 5-10% of your career. If your dream job doesn't feel accessible to you at the moment, take the time to pick up the skills you need to have it. Making career changes is hard, and I've noticed that it's easier to make changes along one axis at a time - geography / skillset / domain. For me, this looked like - econ policy job -> masters -> data science job in policy/research -> data science job in tech. If you're international, you're already making a significant geography change. 
 </br></br>
 Data science is no longer an undersupplied market - apart from the multitude of specific graduate programs have come up in the past few years, other quantitative disciplines have woken up to the need to incorporate computational skills into their training. [Vicki Boykis](https://twitter.com/vboykis) wrote a brilliant [blog post](http://veekaybee.github.io/2019/02/13/data-science-is-different/) on this last year, and its probably even more relevant now. I'll let you read her post directly (you really should!), but the following are all *real* data science positions - even 'data science' is a new, made-up word - we're still negotiating the boundaries of what this actually means.
 </p>
