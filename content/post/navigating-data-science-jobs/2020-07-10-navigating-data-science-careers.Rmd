@@ -57,7 +57,7 @@ Here are some issues I would recommend discussing openly if you're about to acce
 
 <ul>
   <li>Is this gig a stepping stone to grad school?</li>
-  <li>What authorship ambitions do U have?</li>
+  <li>What authorship ambitions do I have?</li>
   <li>What is the extent of my collaboration with the PI, with students, and with research staff?</li>
   <li>How much infrastructure development am I signing up to do? </li>
   <li>What stage of a project will I be working on? Read between the lines closely to estimate the division of time across data collection, experiment design, data cleaning, grant-writing, and paper-writing.</li>
