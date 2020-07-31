@@ -1,5 +1,5 @@
 ---
-title: 'Navigating Data Science Careers- I'
+title: 'Navigating Data Science Careers'
 author: ''
 date: '2020-07-10'
 slug: navigating-data-science-careers
@@ -84,15 +84,76 @@ Learning to talk about my work has been difficult for me - I love what I do, but
 <H2> If you have a connection, use it.  </H2> 
 
 <p align="justify">
-Again, this is another thing that I wish wasn't the case, but unfortunately, it is. Credible referrals from people who know you in a capacity that allows them to speak to your skills, knowledge, and work ethic, can go a long way. At the very least, it usually gets a pair of human eyes on your application. I've found that academic research positions aren't always advertised, so if there are any professors or labs you want to work with, just reach out!
-
+Again, this is another thing that I wish wasn't the case, but unfortunately, it is. Credible referrals from people who know you in a capacity that allows them to speak to your skills, knowledge, and work ethic, can go a long way. At the very least, it usually gets a pair of human eyes on your application. I've found that academic research positions aren't always advertised, so if there are any professors or labs you want to work with, just reach out - your worst outcome is that someone hears their work is admired.
+</br></br>
 If you're asking for a referral or even just for information, ask NICELY. Remember that you're not entitled to their time and energy. Ask specific, bounded questions (don't say "hey, can you tell me about this job?" - they're not obligated to guess what you want to know and write you an essay about their job). Offer multiple channels of communication, at their convenience. You don't need to, and shouldn't, grovel, but you definitely should be kind and polite! Send a thank-you note later. 
 </br></br>
 If you're cold-applying, really optimize your resume by matching keywords to the job description. Include a basic cover letter, even if it is optional. Don't hesitate to prune your resume ruthlessly to really foreground your most relevant experiences.
 </br></br>
 </p>
 
-Part II coming up! 
+<H2> Leverage your social science background. </H2> 
+
+<p align="justify">
+I went to college in an institute of technology where as an Economics major, I was basically regarded as a Poetry major (zero shade against Poetry, but you know what I mean). Partly because 'technology' was seen as so distinct from social science during undergrad, I was surprised by how many things that are now packaged as 'data science' are decades old statistical concepts applied commonly across economics, political science, and quantitative sociology. 
+</br></br>
+The term data science is relatively recent, but social scientists really have been using these ideas forever. We have long traditions of analyzing surveys, using econometrics to draw conclusions about populations from samples, a wide variety of experiments to make causal claims. Forecasting, time series analysis, experiment design, randomized trials (A/B testing? it's a remix) are all completely with the realm of tools quantitative social scientists use to understand the world. 
+</br></br>
+Here are some things podcasts/ talks by very successful data scientists with social science educations that touch on this issue.
+<ul>
+  <li> Sean J Taylor, of `prophet` fame, talked to Casual Inference about using causal inference at Lyft. </li>
+  <li>Chris Albon - political scientist, and maker of flashcards discussed his approach to hiring at Devoted Health on the Google Cloud Platform Podcast. </li>
+  <li>Stephanie Kirmer gave an insightful keynote address at #satRdaysChicago last year about what data science can learn from sociology. </li>
+</ul>
+
+</p>
+
+<H2> Python or R?  </H2> 
+
+<p align="justify">
+This image never fails to make me laugh, but I really think the answer to this question is **do not gatekeep, comment your code, and learn SQL**". (Highly reluctant note to self - the message to not gatekeep applies to Stata users too.)
+Data science Twitter turns into a battleground every few months to hash this out (interspersed by tidy vs base R wars), and it almost never seems to yield anything useful at all. Use whatever has the most comprehensive infrastructure for the task you have at hand. 
+</br></br>
+Python is more ubiquitous, probably more production friendly, has an older machine learning/ deep learning ecosystem, probably a more sophisticated set of NLP libraries, and has a solid set of tools to work with networks. I would assume that it's easier for people with CS backgrounds to pick up Python quickly. 
+</br></br>
+R was created by statisticians to do statistical computing, and is excellent at this. The tidyverse ecosystem has made data exploration, wrangling, and visualizing easy and pleasurable. CRAN has a rapidly growing collection of cutting-edge libraries implementing methods in causal inference, spatial analysis, and time series statistics. My favourite thing about R is the wonderful community that surrounds it.
+</br></br>
+The important thing though, is that these differences are closing rapidly. We're seeing more instances of R deployed to production, more statistical packages in Python, and `reticulate` to help the two languages play nicely with each other. Whichever you decide is your primary language, I would highly recommend being at least conversant in the other, and be able to read and review code in it.
+</p>
+
+
+<H2> Talk respectfully and transparently about money.</H2> 
+
+<p align="justify">
+We've hopefully learned by now that a culture of never talking about money with your peers has played a part in allowing dramatic pay disparity to persist in a wide variety of contexts. Even Meredith Grey didn't know she was being lowballed until her coworkers shared their incomes with her. 
+</br></br>
+If it can inform a friend or coworker's leverage or decisions, don't hesitate to share details of your compensation. When I switched from a university position to a tech industry position, I would have underestimated my own market value byclose to 30% if it hadn't been for the transparency and wisdom of three women from R Ladies Chicago.
+</br></br>
+As a general rule of thumb, don't disclose your previous salary while applying to a new job - it is illegal in several US states for potential employers to ask for this information. Push back against supplying a range until the end of the hiring process, when you have all the information you need. At this point, do your homework! Go on LinkedIn, Glassdoor, BuiltIn, talk to your networks, and arrive at a a realistic range, that you'd be happy to accept. If you're in school, talk to your career services team about this - they probably have plenty of experience with this. 
+</br></br>
+If you're negotiating at your current job, I don't have experience with this but I really like the idea of having a running document of all the work you're accomplishing - Julia Evans calls this a brag document, and it sounds like a great way to have your work recognized.
+</p>
+
+<H2> Remember, it's *one* job!  </H2> 
+<p align="justify">
+It's important to find a role that's a great fit for you, but remember it's one job! Most likely, it's 5-10% of your career. If your dream job doesn't feel accessible to you at the moment, take the time to pick up the skills you need to have it. Making career changes is hard, and I've noticed that it's easier to make changes along one axis at a time - geography / skillset / domain. For me this looked like - econ policy job -> masters -> data science job in policy/research -> data science job in tech. If you're international, you're already making a significant geography change. 
+</br></br>
+Data science is no longer an undersupplied market - apart from the multitude of specific graduate programs have come up in the past few years, other quantitative disciplines have woken up to the need to incorporate computational skills into their training. Vicki Boykis wrote a brilliant blog post on this last year, and its probably even more relevant now. I'll let you read her post directly (you really should!), but the following are all *real* data science positions - even 'data science' is a new, made-up word - we're still negotiating the boundaries of what this actually means.
+</p>
+<ul>
+  <li>data analyst, research analyst, business analyst</li>
+  <li>data scientist, research scientist, ML engineer</li>
+  <li>experimentation, causal inference, people analytics</li>
+  <li>decision scientist, systems engineer, applied statistician</li>
+  <li>data manager, research associate, pre-doctoral research assistant</li>
+</ul>
+<p align="justify">
+I'm still learning to do this, but I think we'd all be better served if we let go of the perceived notions of hierarchy across these jobs. You should definitely think about leveling - your resposnibilities and compensation should be in line with your skills and experience, but there are several valid and real ways to do data science, and it's a waste of time to tell ourselves otherwise.
+</br></br>
+Take risks that are calibrated to your specific situation. It is completely valid and legitimate to take a job that feels non-optimal in some ways to pay your bills, to maintain visa status, for health insurance, to be near a loved one. It is also valid to pass up on non-optimal offers if you have a few feet of runway before you *must* have a job. You don't owe anyone an explanation, do what's right for you! 
+</br></br>
+</p>
+
 
 </span>
 
