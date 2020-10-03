@@ -13,8 +13,8 @@
   url = "/post"
   weight = 2
 
-[[main]]
-  name = "reading"
-  url = "../reading/reading"
-  weight = 3
+#[[main]]
+#  name = "reading"
+#  url = "../reading/reading"
+#  weight = 3
 
