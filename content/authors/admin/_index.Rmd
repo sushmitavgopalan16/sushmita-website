@@ -5,7 +5,8 @@
 ## **Hi, I'm Sushmita!**
 </br>
 <p align="justify">
-I'm a data scientist at <a href="https://www.grubhub.com/lets-eat"> Grubhub</a>, based out of Chicago. I design and analyse experiments, build machine learning models, and develop internal data science tools.
+I'm a data scientist at <a href="https://www.grubhub.com/lets-eat"> Grubhub</a>, based out of Chicago. 
+I design and analyse experiments, build machine learning models, and develop internal data science tools.
 </p>
 <p align="justify">
 Prior to this, I was a data scientist at the <a href="https://sites.northwestern.edu/n3lab/about/"> Northwestern Neighborhood and Network Initiative </a> at Northwestern University. I used statistics, network science and machine learning to work on a variety of projects on gun violence and police misconduct in Chicago. As N3's first data science hire, I had the exciting (and sometimes scary) experience of setting up our computing infrastructure, data pipelines, and analysis processes from scratch. 
